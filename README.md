@@ -53,9 +53,10 @@ A detailed EDA was performed to understand survival patterns:
 Example visualizations:
 
 ```python
-sns.countplot(x='Sex', hue='Survived', data=df)
-sns.boxplot(x='Survived', y='Age', data=df)
-sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
+plt.figure(figsize=(6,4))
+sns.countplot(x='Pclass', hue='Survived', data=df)
+plt.title('Survival by Passenger Class')
+plt.show()
 ```
 
 ## 🤖 Model Building
