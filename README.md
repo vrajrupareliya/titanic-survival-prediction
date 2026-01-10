@@ -1,11 +1,11 @@
-# 🚢 Titanic Survival Prediction using Machine Learning
+#  Titanic Survival Prediction using Machine Learning
 
 Predicting survival chances on the **Titanic dataset** using **Logistic Regression** — one of the most classic beginner projects in machine learning.  
 This project demonstrates data cleaning, exploratory data analysis (EDA), feature engineering, model building, and evaluation using scikit-learn.
 
 ---
 
-## 📋 Project Overview
+##  Project Overview
 
 The goal of this project is to predict whether a passenger survived or not on the Titanic based on features such as age, sex, passenger class, fare, and family relationships.
 
@@ -13,7 +13,7 @@ We build a **classification model** using **Logistic Regression** and evaluate i
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 - **Source:** [Kaggle - Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic/data)
 - **Files Used:** `train.csv`
@@ -21,7 +21,7 @@ We build a **classification model** using **Logistic Regression** and evaluate i
 
 ---
 
-## 🧹 Data Preprocessing
+##  Data Preprocessing
 
 - Handled missing values:
   - `Age` → filled with median  
@@ -38,17 +38,17 @@ We build a **classification model** using **Logistic Regression** and evaluate i
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
+##  Exploratory Data Analysis (EDA)
 
 A detailed EDA was performed to understand survival patterns:
 
 | Visualization | Insights |
 |----------------|-----------|
-| 🔹 Survival by Gender | Females had a much higher survival rate |
-| 🔹 Survival by Passenger Class | 1st Class passengers had the best survival rate |
-| 🔹 Age Distribution | Most passengers were between 20–40 years |
-| 🔹 Fare vs. Survival | Higher fare correlated with better survival |
-| 🔹 Family Size | Small families had higher survival chances |
+|  Survival by Gender | Females had a much higher survival rate |
+|  Survival by Passenger Class | 1st Class passengers had the best survival rate |
+|  Age Distribution | Most passengers were between 20–40 years |
+|  Fare vs. Survival | Higher fare correlated with better survival |
+|  Family Size | Small families had higher survival chances |
 
 Example visualizations:
 
@@ -59,7 +59,7 @@ plt.title('Survival by Passenger Class')
 plt.show()
 ```
 
-## 🤖 Model Building
+##  Model Building
 
 - Model used: Logistic Regression
 
@@ -67,7 +67,7 @@ plt.show()
 - model = LogisticRegression(max_iter=1000)
 - model.fit(X_train, y_train)
 
-## 📈 Model Evaluation
+##  Model Evaluation
 
 - Hold-out Test Accuracy: `81.0%`
 
@@ -87,7 +87,7 @@ Classification Report:
 
 - 5-Fold Cross Validation Accuracy: `0.791`
 
-⚙️ Tech Stack
+ Tech Stack
 
 - Language: Python
 
@@ -101,7 +101,7 @@ Classification Report:
 
 - scikit-learn (LogisticRegression, train_test_split, metrics)
 
-## 🚀 Results & Insights
+##  Results & Insights
 
 - Logistic Regression achieved `~81%` accuracy
 
